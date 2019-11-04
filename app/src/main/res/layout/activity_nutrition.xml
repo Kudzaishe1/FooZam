@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionActivity">
+
+    <ImageView
+        android:id="@+id/foozam_symbol"
+        android:layout_width="93dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/symbol"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/nutritional_info"
+        android:layout_width="178dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/explore_button"
+        app:layout_constraintEnd_toStartOf="@+id/nutritional_info2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/nutritional_info2"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nutritional_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nutritional_info" />
+
+    <ImageView
+        android:id="@+id/recipe_button"
+        android:layout_width="359dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="178dp"
+        android:contentDescription="@string/recipe_label"
+        android:src="@drawable/nutrition_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <Button
+        android:id="@+id/explore_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/rounded_explore_button"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/title_explore"
+        android:textColor="@color/colorBackground"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/return_to_scan_button"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nutritional_info"
+        app:layout_constraintTop_toBottomOf="@+id/nutritional_info" />
+
+    <Button
+        android:id="@+id/return_to_scan_button"
+        android:layout_width="210dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/title_try_another"
+        android:textColor="@color/colorBackground"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explore_button" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/return_to_scan_button"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="9dp"
+        android:text="FRUIT NAME :"
+        app:layout_constraintBottom_toTopOf="@+id/nutritional_info"
+        app:layout_constraintEnd_toStartOf="@+id/nutritional_info2"
+        app:layout_constraintStart_toStartOf="@+id/nutritional_info"
+        app:layout_constraintTop_toBottomOf="@+id/foozam_symbol" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="126dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="50dp"
+        android:text="Nutritional Values"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/nutritional_info"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

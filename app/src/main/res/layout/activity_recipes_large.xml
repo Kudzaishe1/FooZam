@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesActivity">
+
+
+    <!-- Row One of Recipes  -->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_six_image"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <ImageView
+        android:id="@+id/foozam_symbol3"
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/symbol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Row two of recipes -->
+
+
+    <!-- Row 3 of recipes -->
+
+    <!-- End of recipes -->
+
+    <ImageView
+        android:id="@+id/recipe_three_image"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="27dp"
+        android:contentDescription="@string/recipes_image_view"
+        android:onClick="goToUrl"
+        android:src="@drawable/strawberry4"
+        app:layout_constraintBottom_toBottomOf="@+id/recipe_four_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recipe_four_image"
+        app:layout_constraintTop_toTopOf="@+id/recipe_four_image" />
+
+    <ImageView
+        android:id="@+id/recipe_four_image"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/recipes_image_view"
+        android:onClick="goToUrl"
+        android:src="@drawable/strawberry1"
+        app:layout_constraintBottom_toTopOf="@+id/recipe_six_image"
+        app:layout_constraintEnd_toStartOf="@+id/recipe_three_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foozam_symbol3" />
+
+    <ImageView
+        android:id="@+id/recipe_five_image"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginEnd="27dp"
+        android:contentDescription="@string/recipes_image_view"
+        android:onClick="goToUrl"
+        android:src="@drawable/strawberry2"
+        app:layout_constraintBottom_toBottomOf="@+id/recipe_six_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recipe_six_image"
+        app:layout_constraintTop_toTopOf="@+id/recipe_six_image" />
+
+    <ImageView
+        android:id="@+id/recipe_six_image"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/recipes_image_view"
+        android:onClick="goToUrl"
+        android:src="@drawable/strawberry3"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toStartOf="@+id/recipe_five_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_four_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

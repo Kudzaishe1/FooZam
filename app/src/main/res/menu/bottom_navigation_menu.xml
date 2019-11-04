@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ic_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"
+        />
+
+        <item
+            android:id="@+id/ic_scan"
+            android:enabled="true"
+            android:icon="@drawable/ic_photo_camera_black_24dp"
+            android:title="@string/title_scan_fruit"
+            app:showAsAction="ifRoom"
+            />
+        <item
+            android:id="@+id/ic_gallery"
+            android:enabled="true"
+            android:icon="@drawable/ic_photo_library_black_24dp"
+            android:title="@string/title_gallery"
+            app:showAsAction="ifRoom"
+            />
+
+
+
+
+</menu>

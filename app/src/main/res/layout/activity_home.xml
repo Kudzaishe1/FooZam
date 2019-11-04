@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/keep_learning2"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="15dp"
+        android:text="Top Picks"
+        android:textColor="#EB1515"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rare_find_image" />
+
+    <ImageView
+        android:id="@+id/foozam_symbol"
+        android:layout_width="110dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/symbol"
+        app:layout_constraintBottom_toTopOf="@+id/keep_learning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/keep_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:text="@string/title_keep_learning"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rare_find"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foozam_symbol" />
+
+
+    <TextView
+        android:id="@+id/rare_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="@string/title_rare_find"
+        android:textColor="@color/colorRed"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rare_find_image"
+        app:layout_constraintStart_toStartOf="@+id/keep_learning"
+        app:layout_constraintTop_toBottomOf="@+id/keep_learning" />
+
+    <ImageView
+        android:id="@+id/rare_find_image"
+        android:layout_width="343dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/title_rare_find"
+        android:src="@drawable/rare_fruit"
+        app:layout_constraintBottom_toTopOf="@+id/keep_learning2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rare_find" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="343dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/top_picks3"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keep_learning2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

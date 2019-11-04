@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity">
+
+    <ImageView
+        android:id="@+id/foozam_symbol2"
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/company_logo"
+        android:src="@drawable/symbol"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnChoosePicture"
+        android:layout_width="247dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/title_choose_picture"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/predict_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedImage" />
+
+    <Button
+        android:id="@+id/predict_button"
+        android:layout_width="252dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/title_predict"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChoosePicture" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="295dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="55dp"
+        android:layout_weight="9"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/loader"
+        app:layout_constraintBottom_toTopOf="@+id/btnChoosePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/predict_button"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

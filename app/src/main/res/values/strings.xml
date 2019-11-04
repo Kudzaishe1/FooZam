@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FooZam</string>
+    <string name="company_logo">Company Logo</string>
+    <string name="title_scan">Scan</string>
+    <string name="result_image">Result Image</string>
+    <string name="title_keep_learning">Keep Learning</string>
+    <string name="title_rare_find">One of the rarest fruits in the world</string>
+    <string name="title_community">Foodie Community</string>
+    <string name="scan_photo">Scan Photo</string>
+    <string name="title_home">Home</string>
+    <string name="title_scan_fruit">Scan Fruit</string>
+    <string name="title_predict">Predict Fruit</string>
+    <string name="title_choose_picture">Choose Picture</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_try_another">Try Another One</string>
+    <string name="recipe_label">Learn some cool recipes</string>
+    <string name="title_explore">Explore</string>
+    <string name="back_button_label">Back</string>
+    <string name="recipes_image_view">Recipes Image View</string>
+    <string name="title_top_picks">Top picks</string>
+    <string name="title_recipe">Strawberry smoothie</string>
+    <string name="playful_fruits_view">Playful fruits</string>
+</resources>
